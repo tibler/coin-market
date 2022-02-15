@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>Wow gerg coin is up
+<?php
+echo(rand(10) . "<br>");
+echo(rand(-100) . "<br>");
+echo(rand(-100000000,100000000));
+?>
+
+</body>
+</html>%
+ 
