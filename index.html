@@ -1,0 +1,24 @@
+ <!DOCTYPE html>
+<html>
+<body>
+<!--- <h1>...</h1> tags around text makes a big headline --->
+<!--- <span>...</span> tags around text separates them and you give them an ID name inside the tag --->
+<h1>ƷerʒCoin is <span id="upordown">up</span> <span id="number">0</span>%!</h1>
+</body>
+<script>
+//Script tags means that everything inside is run as javascript code
+//this function makes a random number between 2 given values
+    function randomInteger(min,max){
+        var range = max - min;
+        var value = Math.floor(range * Math.random() );
+        var output = value + min;
+        return output;
+    }
+    //this line makes a variable that gets a random value
+    var num = randomInteger(-1000000,1000000);
+    //this line sets the span with the ID "number" to the number varaible
+    document.getElementById("number").innerHTML = num;
+    if(num<0){
+    //if the number is negative, change the text with the ID "upordown" to down
+        document.getElementById("upordown").innerHTML = "down";
+    }
